@@ -1,0 +1,210 @@
+main{
+    background: url(../images/fondo.jpg) no-repeat;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.nosotros{
+    @include fondoBlanco;
+    h1{
+        font-weight: bolder;
+        font-size: size(4);
+    }
+    img{
+        display:flex;
+        position: relative;
+        height: 240px;
+        margin-top: 400px;
+        margin-left: -130px;
+        border-radius: 10px;
+    }
+    p{
+        position: absolute;
+        width: 70%;
+        margin-top: 70px;
+    }
+}
+
+.informacion{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    margin: 15px auto;
+    box-shadow: $box-shadow;
+    img{
+        height: 150px;
+        margin-top: 200px;
+        margin-left: -150px;
+        border-radius: 10px;
+    }    
+}
+
+.horarios h2{
+    font-size: size(4);
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    ul li{
+        padding: auto;
+}
+}
+
+//TABLET-MODO HORIZONTAL
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape)
+{
+    .nosotros{
+        width: 65%;
+    }
+    .nosotros p{    
+        margin-top: 80px;
+        width: 30%;
+    }
+    .nosotros img{
+        position: relative;
+        height: 270px;
+        margin-top: 50px;
+        margin-left: 2500px;
+    }
+    .informacion{
+        width: 65%;
+    }
+    #img2{
+        position: relative;
+        height: 200px;   
+        margin-top: 10px;
+        margin-left: 90px;
+    }
+}
+
+// 
+
+@media only screen
+and (min-width: 768px){
+    .nosotros img{
+        margin-left: 200px;
+    }
+    .informacion img{
+        margin-top: -280px;
+        height: 200px;
+    }
+}
+//TABLET-MODO VERTICAL
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait)
+{
+    .nosotros{
+        width: 85%;
+        margin-top: 90px;
+    }
+    .nosotros p{
+        width: 40%;
+        margin-top: 80px;
+    }
+    .nosotros img{
+        position: relative;
+        height: 250px;
+        margin-top: 70px;
+        margin-right: 150px;
+    }
+    .informacion{
+        width: 85%;
+        margin-top: 105px;
+    }
+    .horarios li{
+        font-size: 15px;
+    }
+    .informacion img{
+        position: relative;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: -150px;
+    }
+}
+
+//ESCRITORIO-1
+@media only screen
+and (min-width: 1200px)
+{
+    .nosotros h1{
+        position: absolute;
+    }
+    .nosotros{
+        width: 60%;
+    }
+    .nosotros p{
+        position: relative;
+        width: 45%;
+        margin-right: 300px;
+        font-size: 20px;
+    }
+    .nosotros img{
+        position: absolute;
+        height: 320px;
+        margin-top: 70px;
+        margin-left: 330px;
+    }
+    .informacion{
+        width: 50%;
+    }
+    .horarios li{
+        font-size: 20px;
+    }
+    .informacion img{
+        position: relative;
+        margin-top: 10px;
+        margin-left:40px;
+    }
+}
+
+//ESCRITORIO-2
+
+@media only screen
+and (min-width: 1900px)
+{
+    .body{
+        width: 100%;
+    }
+    .nosotros{
+        display: flex;
+        padding: 15px;
+        border-radius: 20px;
+        margin: 15px auto;
+        width: 50%;
+    }
+    .nosotros p{
+        position: absolute;
+        width: 25%;
+        font-size: 24px;
+        margin-top: 37px;
+    }
+    .nosotros img{
+        position: relative;
+        height: 350px;
+        margin-top: 40px;
+        margin-left: 520px;
+    }
+    .informacion{
+        width: 50%;
+    }
+    .horarios ul li{
+        font-size: 24px;
+    }
+    .informacion img{
+        position: relative;
+        height: 250px;
+        margin-top: 10px;
+        margin-left: -100px;
+    }
+}

@@ -1,0 +1,99 @@
+footer{
+    background-color: $primary_color;
+    width: 100%;
+    padding: 10px 0px;
+    height: 110px;
+    margin-top: auto;
+    nav{
+        font-size: 14px;
+    }
+    img{
+        display: inline-block;
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        margin-left: 190px;
+    }
+    p{
+        padding: 5px;
+        margin-top: -25px;
+        margin-left: 230px;
+        font-size: 12px;
+    }
+}
+
+//TABLET-MODO HORIZONTAL
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: landscape)
+{
+    .footer img{
+        width: 45px;
+        height: 45px;
+        margin-left: 710px;
+    }
+    .footer p{
+        padding: 5px;
+        margin-top: -15px;
+        margin-left: 750px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+//TABLET-MODO VERTICAL
+
+@media only screen
+and (min-width: 768px)
+and (max-width: 1024px)
+and (orientation: portrait)
+{
+    .footer img{
+        width: 45px;
+        height: 45px;
+        margin-left: 510px;
+    }
+        
+    .footer p{
+        padding: 5px;
+        margin-top: -20px;
+        margin-left: 555px;
+        font-size: size(2);
+    }
+}
+
+//ESCRITORIO
+
+@media only screen
+and (min-width: 1200px)
+{
+    .footer img{
+        margin-left: 950px;
+    }
+    .footer p{
+        margin-left: 1000px;
+        margin-top: -10px;
+        font-weight: bolder;
+    }
+}
+
+//ESCRITORIO-2
+
+@media only screen
+and (min-width: 1900px)
+{
+    .footer img{
+        width: 45px;
+        height: 45px;
+        margin-left: 1600px;
+    }
+    .footer p{
+        padding: 5px;
+        margin-top: -15px;
+        margin-left: 1650px;
+        font-weight: bolder;
+        font-size: size(2);
+    }
+}
